@@ -17,20 +17,24 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\builds\$(Configuration)-$(Platform)\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseIntermediateOutputPath>..\..\builds\$(Configuration)-$(Platform)\obj-$(AssemblyName)\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>..\..\builds\$(Configuration)-$(Platform)\obj-$(AssemblyName)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\builds\$(Configuration)-$(Platform)\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseIntermediateOutputPath>..\..\builds\$(Configuration)-$(Platform)\obj-$(AssemblyName)\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>..\..\builds\$(Configuration)-$(Platform)\obj-$(AssemblyName)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
